@@ -7,7 +7,7 @@ function isGreenCompany(name, industry) {
 }
 
 async function fetchCompanies() {
-  const res = await fetch("https://us-central1-YOUR_PROJECT_ID.cloudfunctions.net/fetchCompanies");
+  const res = await fetch("/api/fetchCompanies");
   const data = await res.json();
   displayCompanies(data);
 }
